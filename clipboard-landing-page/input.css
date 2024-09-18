@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+      @apply text-4xl text-darkGrayishBlue font-bold text-center;
+    }
+    h4 {
+        @apply text-lg text-darkGrayishBlue font-bold text-center;
+      }
+    p {
+        @apply text-lg text-grayishBlue text-center font-[400] pt-3;
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-[#dbdbdb]">
+    <div class="m-3">
+        <div id="box" class="m-auto max-w-[560px] bg-[#ffffff] p-3 md:p-5 rounded-2xl rounded-br-[100px]">
+            <div id="dob" class="flex gap-3 pt-6">
+                <div>
+                    <p class="text-[#716f6f]">DAY</p>
+                    <input type="text" name="day" id="day" placeholder="DD" maxlength="2"  class="border rounded w-full  md:w-24 p-[2px] font-bold md:text-[32px]">
+                </div>
+                <div>
+                    <p class="text-[#716f6f]">MONTH</p>
+                    <input type="text" name="month" id="month" placeholder="MM" maxlength="2" class="border rounded w-full md:w-24 p-[2px] font-bold md:text-[32px]">
+                </div>
+                <div>
+                    <p class="text-[#716f6f]">YEAR</p>
+                    <input type="text" name="year" id="year" placeholder="YYYY" maxlength="4" class="border rounded w-full md:w-24 p-[2px] font-bold md:text-[32px]">
+                </div>
+            </div>
+            <div class="pt-6 flex items-center">
+                <div class="border-b-2 w-full"></div>
+                <div class="bg-[#854dff]  rounded-full p-3"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg></div>
+                <div class="border-b-2 w-full md:hidden"></div>
+            </div>
+            <div class="pb-6">
+                <div class="font-extrabold text-[42px] italic"><span id="year" class="text-[#854dff]">- -</span>years</div>
+                <div class="font-extrabold text-[42px] italic"><span id="month" class="text-[#854dff]">- -</span>months</div>
+                <div class="font-extrabold text-[42px] italic"><span id="day" class="text-[#854dff]">- -</span>days</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
