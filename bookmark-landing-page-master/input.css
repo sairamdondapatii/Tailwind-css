@@ -21,9 +21,9 @@ p{
 .menu-active>a{
     @apply w-full text-center text-xl p-2 mt-4 border-2;
 }
-.tab-active{
+/* .tab-active{
     @apply border-b-4 border-softRed text-veryDarkBlue;
-}
+} */
 .answer{
     @apply transition-all duration-1000 ease-linear;
 }

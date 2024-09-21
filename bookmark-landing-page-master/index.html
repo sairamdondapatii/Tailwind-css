@@ -55,54 +55,58 @@
             <p class="text-center max-w-md mx-auto">Our aim is to make it quick and easy for you to access your favourite websites. 
                 Your bookmarks sync between your devices so you can access them on the go.</p>
         </div>
-        <div class="mt-5 border-t md:border-t-0 md:flex md:justify-center">
-            <div class="flex justify-center  border-b md:px-14"><p id="tab-1" class="tab-active hover:text-softRed cursor-pointer">Simple Bookmarking</p></div>
-            <div class="flex justify-center border-b md:px-14"><p id="tab-2" class=" hover:text-softRed cursor-pointer">Speedy Searching</p></div>
-            <div class="flex justify-center border-b md:px-14"><p id="tab-3" class=" hover:text-softRed cursor-pointer">Easy Sharing</p></div>
+        <!-- tabs  -->
+        <div class="tabs mt-5 border-t md:border-t-0 md:flex md:justify-center">
+            <div  class=" flex justify-center  border-b md:px-14"><p id="tab-1" data-target="panel-1"  class="tab  border-b-4 border-softRed text-veryDarkBlue hover:text-softRed cursor-pointer">Simple Bookmarking</p></div>
+            <div  class=" flex justify-center border-b md:px-14"><p id="tab-2"  data-target="panel-2" class=" tab  hover:text-softRed cursor-pointer">Speedy Searching</p></div>
+            <div  class=" flex justify-center border-b md:px-14"><p id="tab-3"  data-target="panel-3" class=" tab  hover:text-softRed cursor-pointer">Easy Sharing</p></div>
         </div>
-        <!-- tab1  -->
-        <div id="panel-1" class="container mx-auto flex flex-col items-center justify-center gap-7 md:gap-10 md:mb-10 md:flex-row mt-14 md:items-center">
-            <div class="md:w-1/2">
-                <img src="./images/illustration-features-tab-1.svg" alt="" class="p-5 md:mx-auto">
+        <!-- panels  -->
+         <div id="panels">
+            <!-- tab1  -->
+            <div id="panel-1" data-target="panel-1" class="panel panel-1 container mx-auto flex flex-col items-center justify-center gap-7 md:gap-10 md:mb-10 md:flex-row mt-14 md:items-center">
+                <div class="md:w-1/2">
+                    <img src="./images/illustration-features-tab-1.svg" alt="" class="p-5 md:mx-auto">
+                </div>
+                <div class="max-w-md">
+                    <h2 class="md:text-2xl md:font-semibold text-center text-veryDarkBlue text-xl font-semibold md:mt-0 md:text-left p-2">Bookmark in one click</h2>
+                    <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                        gives you complete control over how you manage your favourite sites.</p>
+                    <div class="p-2 text-center md:text-left">
+                        <a href="#" class="bg-softBlue shadow-md border-2 border-softBlue p-2 rounded-md text-white hover:bg-white hover:text-black">More info</a>
+                    </div>
+                </div>
             </div>
-            <div class="max-w-md">
-                <h2 class="md:text-2xl md:font-semibold text-center text-veryDarkBlue text-xl font-semibold md:mt-0 md:text-left p-2">Bookmark in one click</h2>
-                <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
-                    gives you complete control over how you manage your favourite sites.</p>
-                <div class="p-2 text-center md:text-left">
-                    <a href="#" class="bg-softBlue shadow-md border-2 border-softBlue p-2 rounded-md text-white hover:bg-white hover:text-black">More info</a>
+            <!-- tab2  -->
+            <div id="panel-2" data-target="panel-2" class="panel panel-2  hidden  container mx-auto  flex-col items-center justify-center gap-7 md:gap-10 md:mb-10 md:flex-row mt-14 md:items-center">
+                <div class="md:w-1/2">
+                    <img src="./images/illustration-features-tab-2.svg" alt="" class="p-5 md:mx-auto">
+                </div>
+                <div class="max-w-md">
+                    <h2 class="md:text-2xl md:font-semibold text-center text-veryDarkBlue text-xl font-semibold md:mt-0 md:text-left p-2">Intelligent search</h2>
+                    <p>Our powerful search feature will help you find saved sites in no time at all. 
+                        No need to trawl through all of your bookmarks.</p>
+                    <div class="p-2 text-center md:text-left">
+                        <a href="#" class="bg-softBlue shadow-md border-2 border-softBlue p-2 rounded-md text-white hover:bg-white hover:text-black">More info</a>
+                    </div>
+                </div>
+            </div>
+            <!-- tab-3  -->
+            <div id="panel-3" data-target="panel-3" class="panel panel-3  hidden  container mx-auto  flex-col justify-center items-center gap-7 md:gap-10 md:mb-10 md:flex-row mt-14 md:items-center">
+                <div class="md:w-1/2">
+                    <img src="./images/illustration-features-tab-3.svg" alt="" class="p-5 md:mx-auto">
+                </div>
+                <div class="max-w-md">
+                    <h2 class="md:text-2xl md:font-semibold text-center text-veryDarkBlue text-xl font-semibold md:mt-0 md:text-left p-2">Share your bookmarks</h2>
+                    <p>Easily share your bookmarks and collections with others. Create a shareable 
+                        link that you can send at the click of a button.</p>
+                    <div class="p-2 text-center md:text-left">
+                        <a href="#" class="bg-softBlue shadow-md border-2 border-softBlue p-2 rounded-md text-white hover:bg-white hover:text-black">More info</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- tab2  -->
-        <div id="panel-2" class="hidden container mx-auto  flex-col items-center justify-center gap-7 md:gap-10 md:mb-10 md:flex-row mt-14 md:items-center">
-            <div class="md:w-1/2">
-                <img src="./images/illustration-features-tab-2.svg" alt="" class="p-5 md:mx-auto">
-            </div>
-            <div class="max-w-md">
-                <h2 class="md:text-2xl md:font-semibold text-center text-veryDarkBlue text-xl font-semibold md:mt-0 md:text-left p-2">Intelligent search</h2>
-                <p>Our powerful search feature will help you find saved sites in no time at all. 
-                    No need to trawl through all of your bookmarks.</p>
-                <div class="p-2 text-center md:text-left">
-                    <a href="#" class="bg-softBlue shadow-md border-2 border-softBlue p-2 rounded-md text-white hover:bg-white hover:text-black">More info</a>
-                </div>
-            </div>
-        </div>
-        <!-- tab-3  -->
-        <div id="panel-3" class="hidden container mx-auto  flex-col justify-center items-center gap-7 md:gap-10 md:mb-10 md:flex-row mt-14 md:items-center">
-            <div class="md:w-1/2">
-                <img src="./images/illustration-features-tab-3.svg" alt="" class="p-5 md:mx-auto">
-            </div>
-            <div class="max-w-md">
-                <h2 class="md:text-2xl md:font-semibold text-center text-veryDarkBlue text-xl font-semibold md:mt-0 md:text-left p-2">Share your bookmarks</h2>
-                <p>Easily share your bookmarks and collections with others. Create a shareable 
-                    link that you can send at the click of a button.</p>
-                <div class="p-2 text-center md:text-left">
-                    <a href="#" class="bg-softBlue shadow-md border-2 border-softBlue p-2 rounded-md text-white hover:bg-white hover:text-black">More info</a>
-                </div>
-            </div>
-        </div>
-     </div>
+    </div>
     <!-- extensions section  -->
     <div class="mt-10">
         <div class="md:max-w-md mx-auto">

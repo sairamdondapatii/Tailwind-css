@@ -3,6 +3,7 @@ let navLinks = document.querySelector('#nav-links');
 let icon = document.querySelector('#icon');
 let lgLogo = document.getElementById('lg-logo');
 let smLogo = document.getElementById('sm-logo');
+
 menu.onclick=()=>{
     changeIcon()
     navLinks.classList.toggle('menu-active');
@@ -26,46 +27,26 @@ function changeIcon(){
     }
 }
 
+let tabs  = document.querySelectorAll('.tab');
+let panels = document.querySelectorAll('.panel');
 
-let tab1 = document.getElementById('tab-1');
-let tab2 = document.getElementById('tab-2');
-let tab3 = document.getElementById('tab-3');
-let panel1 = document.getElementById('panel-1');
-let panel2 = document.getElementById('panel-2');
-let panel3 = document.getElementById('panel-3');
 
-tab1.onclick =()=>{
-    tab1.classList.add('tab-active')
-    tab2.classList.remove('tab-active');
-    tab3.classList.remove('tab-active');
-    panel1.classList.remove('hidden');
-    panel2.classList.add('hidden')
-    panel2.classList.remove('flex')
-    panel3.classList.add('hidden');
-    panel3.classList.remove('flex');
-}
+tabs.forEach((tab)=>{tab.addEventListener('click',changeTab)});
 
-tab2.onclick =()=>{
-    tab1.classList.remove('tab-active')
-    tab2.classList.add('tab-active');
-    tab3.classList.remove('tab-active');
-    panel1.classList.add('hidden');
-    panel2.classList.remove('hidden')
-    panel2.classList.add('flex')
-    panel3.classList.add('hidden');
-    panel3.classList.remove('flex');
-}
 
-tab3.onclick =()=>{
-    tab1.classList.remove('tab-active');
-    tab2.classList.remove('tab-active');
-    tab3.classList.add('tab-active');
-    panel1.classList.add('hidden');
-    panel2.classList.add('hidden');
-    panel2.classList.remove('flex');
-    panel3.classList.add('flex');
-    panel3.classList.remove('hidden');
-}
+function changeTab(e){
+   tabs.forEach((tab)=>{
+    tab.classList.remove('border-b-4', 'border-softRed', 'text-veryDarkBlue');
+   });
+   panels.forEach((panel)=>{
+    panel.classList.add('hidden');
+   });
+   e.target.classList.add('border-b-4', 'border-softRed', 'text-veryDarkBlue');
+   const classString = e.target.getAttribute('data-target');
+   document.getElementById('panels').getElementsByClassName(classString)[0].classList.remove('hidden');
+   document.getElementById('panels').getElementsByClassName(classString)[0].classList.add('flex');
+
+};
 
 
 let faq = document.querySelectorAll('.faq');

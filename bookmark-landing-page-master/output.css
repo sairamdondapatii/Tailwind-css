@@ -777,6 +777,10 @@ h1 {
   border-top-width: 2px;
 }
 
+.border-b-4 {
+  border-bottom-width: 4px;
+}
+
 .border-dotted {
   border-style: dotted;
 }
@@ -1008,13 +1012,9 @@ p {
   line-height: 1.75rem;
 }
 
-.tab-active {
-  border-bottom-width: 4px;
-  --tw-border-opacity: 1;
-  border-color: hsl(0 94% 66% / var(--tw-border-opacity));
-  --tw-text-opacity: 1;
-  color: hsl(229 31% 21% / var(--tw-text-opacity));
-}
+/* .tab-active{
+    @apply border-b-4 border-softRed text-veryDarkBlue;
+} */
 
 .answer {
   transition-property: all;
