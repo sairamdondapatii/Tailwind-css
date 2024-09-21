@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    h1{
+        @apply text-3xl p-2 text-center text-veryDarkBlue font-semibold md:text-left md:text-4xl;
+    }
+}
+
+p{
+    @apply text-xl p-2 text-center text-grayishBlue md:text-left;
+}
+.menu-active{
+    @apply absolute top-[0] left-0 w-full flex flex-col bg-[rgba(0,0,0,0.8)] min-h-svh text-white pt-12 -z-10;
+}
+.menu-active>div{
+    @apply  w-full text-xl  text-center border-b border-grayishBlue py-4;
+}
+
+.menu-active>a{
+    @apply w-full text-center text-xl p-2 mt-4 border-2;
+}
+.tab-active{
+    @apply border-b-4 border-softRed text-veryDarkBlue;
+}
+.answer{
+    @apply transition-all duration-1000 ease-linear;
+}
+.faq {
+    @apply cursor-pointer;
+}
+.faq.active .answer{
+    @apply max-h-60;
+}
+.faq img{
+    @apply transition-all duration-1000 ease-linear;
+}
+.faq.active img{
+    @apply rotate-180;
+}
